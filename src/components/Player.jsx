@@ -1,9 +1,9 @@
 import {useState} from 'react';
 
-export default function Player(name, symbol) {
+export default function Player({name, symbol}) {
     const [isEditing, setIsEditing] = useState(false);
     
-    function handleEditing () {
+    function handleEditing() {
         setIsEditing(true);
     }
     let playerName = <span className="player-name">{name}</span>;
